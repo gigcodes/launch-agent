@@ -1,5 +1,9 @@
 name: Build
 
+permissions:
+  pull-requests: write
+  contents: write
+
 on:
   release:
     types: [created]
