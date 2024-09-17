@@ -47,7 +47,6 @@ func main() {
 			panic(err)
 		}
 		req.Header.Set("Content-Type", "application/json")
-		req.Header.Set("Secret", cfg.Secret)
 		client := &http.Client{}
 		resp, err := client.Do(req)
 		if err != nil {

@@ -11,13 +11,11 @@ const configFile = "config.json"
 
 type Config struct {
 	Url    string `json:"url"`
-	Secret string `json:"secret"`
 }
 
 func GetConfig() *Config {
 	config := &Config{
 		Url:    "",
-		Secret: "",
 	}
 
 	// Create the config directory if it doesn't exist
